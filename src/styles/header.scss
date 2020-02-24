@@ -1,0 +1,170 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.web-app {
+    display: none;
+}
+
+// responsive header
+  .mobile-navbar {
+    display: block;   
+    overflow: hidden;
+    box-shadow: 0px 6px 5px -3px $color-lightgrey;
+  
+    .mobile-menu {
+      flex: 1 0 60%; 
+    }
+    .mobile-cart {
+      flex: 1 0 28%;  
+      margin-top: 11px;
+    }
+    .mobile-hamburger {
+      flex: 1 0 12%; 
+      padding: 4% 4% 1% 4%;
+    }
+    img{
+      width: 30%;
+    }
+    #myLinks {
+      display: none;
+    }
+    ul li {
+      list-style: none;
+    }
+    a {
+    color: $color-black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    }
+    &:focus {
+    outline: none;
+    }
+    a.icon {
+    display: block;
+    position: absolute;
+    right: 7px;
+    top: 8px; 
+    }
+  }
+
+  .m-btn-cart {
+    display: block;
+    padding: 4% 4% 1% 4%;
+    opacity: 0.7;
+    text-align: center;
+    img {
+        width: 25px;
+        height: 25px;
+    }
+    span {
+        font-size: 14px;
+        vertical-align: super;
+        margin-left: 5%;
+    }
+    
+}
+  
+@media only screen and (min-width: 768px) {
+
+header {
+    border-bottom: 1px solid $color-lightgray;
+    box-shadow: 0px 3px 10px $color-lightgrey;
+}
+
+.logo {
+  padding: 6px;
+}
+
+.mobile-navbar {
+    display: none;
+    margin-left: 20px;
+}
+
+.header-nav {
+  ul {
+    li {
+    list-style: none;
+    float: left;
+    padding: 20px 20px 20px 0;
+    margin-top: 28px;
+    a {
+    text-decoration: none;
+    color: $color-black;
+    font-size: 15px;
+    }
+  }
+ }
+}
+
+.top-nav {
+  margin: 0 0 2px 45px;
+  ul { 
+    li {
+    list-style: none;
+    margin-bottom: 25px;
+    a {
+    text-decoration: none;
+    color: $color-black;
+    padding: 0 7px;
+    font-size: 15px;
+    }
+   }
+  }
+}
+
+
+.cart {
+  background-color: $color-grey;
+  padding: 4px;
+}
+
+.btn-cart {
+  width: 48%;
+  height: 52px;
+  border: 1px solid $color-whitesmoke;
+  background-color: $color-whitesmoke;
+  margin-top: 3px;
+  img {
+  width: 30px;
+  height: 30px;
+  }
+  a {
+  text-decoration: none;
+  color: $color-black;
+  }
+}
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+ 
+
+.desktop {
+  width: 70%;
+  margin: auto;
+}
+
+.btn-cart {
+  width: 37%;
+  height: 52px;
+  border: 1px solid $color-whitesmoke;
+  background-color: $color-whitesmoke;
+  margin-top: 3px;
+  img {
+    width: 40px;
+    height: 30px;
+  }
+  a {
+  text-decoration: none;
+  color: $color-black;
+  }
+}
+}

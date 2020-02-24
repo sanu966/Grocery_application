@@ -1,0 +1,87 @@
+    .flexContainer {
+        display: flex;
+    }
+
+    .flexRowDirection {
+        flex-direction: row;
+    }
+
+    .flexColumnDirection {
+        flex-direction: column;
+    }
+
+    .flexItem {
+    flex: 1;
+    }
+
+    .flexStart {
+    justify-content: flex-start;
+    }
+
+    .flexEnd {
+    align-items: flex-end;
+    }
+
+    .flexRow {
+        flex-flow: row wrap;
+    }
+
+    
+@media only screen and (min-width: 768px){
+    .flexTop {
+        justify-content: flex-end;
+    }
+
+    .flexCart {
+        justify-content: flex-end;
+    }
+
+    .flexContainer {
+    display: flex;
+    }
+
+    .flexStart {
+    justify-content: flex-start;
+    }
+
+    .flexEnd {
+    align-items: flex-end;
+    }
+
+    .itemCenter {
+    align-items: center;
+    }
+
+    .flexRowDirection {
+        flex-direction: row;
+    }
+
+    .flexRow {
+        flex-flow: row wrap;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+
+        .flexItem {
+        flex: 1;
+        }
+    
+        .flexStart {
+        justify-content: flex-start;
+        }
+    
+        .flexEnd {
+        align-items: flex-end;
+        }
+  
+        .flexColumnDirection {
+            flex-direction: column;
+        }
+    
+        .flexRow {
+            flex-flow: row wrap;
+        }
+
+}

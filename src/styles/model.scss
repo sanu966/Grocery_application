@@ -1,0 +1,34 @@
+@import "./variables.scss";
+.modal {
+    position: fixed;
+    width:100%;
+    height: 100%;
+    background: $color-lightblack;
+  }
+  
+  .modal-main {
+    top:59%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .display-block {
+    display: block;
+    position: fixed;
+    z-index: 999;
+  }
+  
+  .display-none {
+    display: none;
+  }
+
+@media screen and (min-width: 768px){
+    .modal-main {
+      top: 50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+    }
+    
+}
+
+

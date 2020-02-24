@@ -1,0 +1,365 @@
+@import "./variables.scss";
+
+*{
+    text-decoration: none;
+}
+
+.section-plp{
+    .sidebar {
+        ul {
+            padding-left: 0px;
+        }
+        ul li {
+            border-bottom: 1px solid $color-grey;
+            list-style: none;
+            padding: 10px;
+            a{
+                text-decoration: none;
+            }
+        }
+
+        .topnavside{
+            display: block;
+            overflow: hidden;
+            background-color: $color-oldrose;
+            .showMenu {
+                display: block;
+            }
+            .iconDown {
+                float: right;
+                height: 17px;
+              }
+            .selectedFilter{
+                color: $color-white;
+            }  
+            .myLinks {
+                display: none;
+            }
+        
+            ul li {
+                list-style: none;
+            }
+            a {
+                color: $color-white;
+                padding: 5px 10px;
+                font-size: 16px;
+                display: block;
+              }  
+        }
+    }
+    
+    .active {
+        background-color: $color-boulder;
+        color: $color-white;
+      }
+
+    .products {
+         .item {       
+        box-sizing: border-box;
+        border-bottom: 2px dotted $color-darkgray;
+        padding: 5px;  
+        h1 {
+            display: none;
+        } 
+        .item-inner-content{
+        
+        img {
+            width: auto;
+            height: 130px;
+            float: left;
+            clear: none;
+            margin: 0 3px 0 0;
+        }
+        p {
+            margin-top: 0px;
+            font-size: 14px;
+            height: 120px;
+            background-color: $color-gainsboro;
+            padding: 2px 2px;
+            overflow: hidden;
+        }
+
+        .price-tag {
+            display: none;
+        }
+        .buyNow-btn {
+            display: none;
+        }
+     }
+     .buyNow-mobile-btn {
+        background-color: $color-oldrose;
+        width: 99%;
+        color: $color-white;
+        text-decoration: none;
+        padding: 7px;
+        font-size: 15px;
+        margin: 7px 5px 7px 3px;
+        border: 1px solid $color-oldrose;
+    }
+    h2 {
+        font-size: 15px;
+        min-height: 50px;
+        margin: 7px 0 0 7px;
+    }
+  }
+ }
+}
+
+// For tablets
+@media screen and (min-width: 768px) {
+    .section-plp {
+        .sidebar {
+            background-color: $color-gainsboro;
+            flex: 1 0 225px;
+        .topnavside {
+            display: block;
+            background-color: $color-gainsboro;
+            .showMenu {
+                display: none;
+            }
+            .selectedFilter {
+                display: none;
+            } 
+            .myLinks {
+                display: inline;
+            }
+            .iconDown {
+                display: none;
+              }
+              a {
+                color: $color-black;
+              }
+        }
+     }
+
+   .products {
+       flex: 1 1 auto;
+       .item {
+           width: 48%;
+           margin-left: 4px;
+           border-right: 4px solid $color-whitesmoke;
+           .buyNow-mobile-btn {
+            display: block;
+            width: 97%;
+            padding: 9px;
+            font-size: 14px;
+            margin: 7px 5px 7px 3px;
+        }
+        h1 {
+            display: none;
+        }
+        h2 {
+            font-size: 15px;
+            min-height: 50px;
+            margin: 7px 0 0 7px;
+        }
+       
+       .item-inner-content {
+           img {
+            width: auto;
+            height: 120px;
+            margin: 15px;
+           }
+           p {
+            height: 128px;
+            font-size: 12px;
+            overflow: hidden;
+            margin: 15px 7px 12px 0;
+            background-color: $color-gainsboro;
+            padding: 5px 4px 0 5px;
+             }
+           .price-tag {
+               display: none;
+           }
+           .buyNow-btn {
+               display: none;
+           }
+           
+       }
+    }
+   }
+ }
+}
+
+@media screen and (min-width: 1024px){
+    .section-plp{
+        .sidebar {
+            //height: 100%;
+            background-color: $color-gainsboro;
+            flex: 1 0 230px;
+            .topnavside{
+                display: block;
+                background-color: $color-gainsboro;
+                .showMenu {
+                    display: none;
+                }
+                .iconDown {
+                    display: none;
+                  }
+                .selectedFilter {
+                    display: none;
+                }  
+                .myLinks{
+                    display: inline;
+                } 
+                a {
+                    color: $color-black;
+                  }   
+            }
+        }
+        
+        .products{
+            .item {
+                width: 23%;
+                border-right: 4px solid $color-whitesmoke;
+                border-bottom: 3px dotted $color-whitesmoke;
+                .buyNow-mobile-btn {
+                    display: none;
+                }
+                h1 {
+                    display: none;
+                }
+                h2 {
+                    min-height: 100px;
+                    margin: 7px 0 0 7px;
+                    font-size: 15px;
+                }
+            .item-inner-content{
+                img {
+                    width: auto;
+                    height: 100px;
+                    margin: 15px;
+                }
+                p {
+                    height: 100px;
+                    font-size: 14px;
+                    overflow: hidden;
+                    margin: 7px 7px 12px 7px;
+                    padding: 4px;
+                    background-color: $color-gainsboro;
+                }
+                .price-tag {
+                    display: inline;
+                    font-size: 9px;
+                    margin-left: 5px;
+                }
+                .buyNow-btn {
+                    display: inline-block;
+                    width: 49%;
+                    background-color: $color-oldrose;
+                    border: 1px solid $color-oldrose;
+                    color: $color-white;
+                    text-decoration: none;
+                    padding: 3px;
+                    margin: 0 0 5px 9px;
+                    bottom: 0;
+                    font-size: 14px;
+                }
+                
+            }
+         }
+            .section-products{
+                .item{
+                    h3{
+                        font-size: 14px;
+                        height: 40px;
+                    }
+                    width: 25%;
+                    border-bottom: none;
+                    border-right: 3px solid $color-whitesmoke;
+                    border-bottom: 2px dotted $color-whitesmoke;
+                    .item-content{  
+                        .item-inner-content{
+                        width: 100%;
+                        p{
+                            height: 110px;
+                        }
+
+                        .price-tag {
+                            font-size: 14px;
+                        }
+                       }
+                    }
+                }
+            }             
+        } 
+    }
+}       
+
+
+//For large desktop
+@media screen and (min-width: 1612px){
+    .section-plp{    
+        .sidebar {
+            background-color: $color-gainsboro;
+            flex: 1 0 300px;
+            .topnavside{
+                display: block;
+                background-color: $color-gainsboro;
+                .showMenu {
+                    display: none;
+                }
+                .iconDown {
+                    display: none;
+                  }
+                .selectedFilter {
+                    display: none;
+                }  
+                .myLinks{
+                    display: inline;
+                }  
+            }
+        }
+        
+        .products{
+            .item {
+                width: 24%;
+                border-right: 4px solid $color-whitesmoke;
+                border-bottom: 3px dotted $color-whitesmoke;
+                .buyNow-mobile-btn {
+                    display: none;
+                }
+                h1 {
+                    display: none;
+                }
+                h2 {
+                    min-height: 65px;
+                    margin: 7px 0 0 7px;
+                }
+            
+            .item-inner-content{
+                img {
+                    width: auto;
+                    height: 178px;
+                    margin: 15px;
+                }
+                p {
+                    height: 100px;
+                    font-size: 15px;
+                    overflow: hidden;
+                    margin: 7px 7px 12px 7px;
+                    padding: 4px;
+                    background-color: $color-gainsboro;
+                }
+                .price-tag {
+                    display: inline;
+                    font-size: 14px;
+                    margin-left: 5px;
+                }
+                .buyNow-btn {
+                    display: inline-block;
+                    width: 44%;
+                    background-color: $color-oldrose;
+                    border: 1px solid $color-oldrose;
+                    color: $color-white;
+                    text-decoration: none;
+                    padding: 10px;
+                    margin: 0 0 5px 19px;
+                    font-size: 15px;
+                }
+                
+            }
+        }            
+      } 
+    }
+}       
